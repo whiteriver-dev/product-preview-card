@@ -152,6 +152,7 @@ h1 {
 
     .content-container {
         gap: 1.5em;
+        padding: 32px;
     }
 
     .product-image-mobile {
