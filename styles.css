@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Colours */
+
+    --cream: #F2EAE2;
+    --saurus: #6C7289;
+    --aquamarine: #3D8168;
+    --aquamarine-hover: #1A4032;
+    --gunmetal: #1C232B;
+
+}
+
+* {
+    max-width: 100%;
+    height: auto;
+}
+
+html, body {
+    background-color: var(--cream);
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1, p, button {
+    all: unset;
+}
+
+button {
+    background-color: var(--aquamarine);
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 8px;
+
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: auto;
+    letter-spacing: 0;
+    color: white;
+}
+
+.cart-icon {
+    padding-right: 12px;
+}
+
+.product-image-mobile {
+    display: flex;
+}
+
+.product-image-desktop {
+    display: none;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+}
+
+.content-container {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    max-width:295px;
+}
+
+.product-type {
+    color: var(--saurus);
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    line-height: auto;
+}
+
+h1 {
+    color: var(--gunmetal);
+    font-family: 'Fraunces';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+}
+
+.product-description {
+    color: var(--saurus);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    padding-bottom: 10px;
+}
+
+.discounted-price {
+    color: var(--aquamarine);
+    font-family: 'Fraunces';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+}
+
+.original-price {
+    color: var(--saurus);
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0;
+    text-decoration: line-through;
+}
+
+@media (min-width: 768px) {
+    html, body {
+        height: 100%;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 450px;
+    }
+
+    .content-container {
+        gap: 1.5em;
+    }
+
+    .product-image-mobile {
+        display: none;
+    }
+
+    .product-image-desktop {
+        display: flex;
+        max-width: 50%;
+    }
+}
